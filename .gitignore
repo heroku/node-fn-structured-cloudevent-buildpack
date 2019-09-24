@@ -1,0 +1,6 @@
+.idea/
+dependency-cache/
+.DS_Store
+artifactory/
+.vscode/
+node-fn-structured-cloudevent-buildpack-*.tgz
