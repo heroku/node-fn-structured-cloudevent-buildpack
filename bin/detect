@@ -2,6 +2,7 @@
 set -eo pipefail
 
 if [ -f package.json ]; then
+  echo "node-fn-structured-cloudevent"
   exit 0
 else
   exit 1
