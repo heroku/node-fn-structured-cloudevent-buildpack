@@ -5,8 +5,6 @@ BP_DIR=$(cd $(dirname $0)/..; pwd)
 LAYERS_DIR="$1"
 MW_LAYER="$LAYERS_DIR/middleware"
 
-echo "doing stuff in $MW_LAYER"
-
 mkdir -p "$MW_LAYER/env"
 
 cp "$BP_DIR/index.js" $MW_LAYER

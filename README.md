@@ -1,4 +1,4 @@
-# `node-fn-structured-cloudevent-buildpack`
+# Heroku Buildpack for Structured Cloudevents in Node Functions
 
 This buildpack provides a node function middleware that extracts structured
 cloudevents `data` from the structured wrapper.
