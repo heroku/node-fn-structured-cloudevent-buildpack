@@ -10,5 +10,4 @@ mkdir -p "$MW_LAYER/env"
 cp "$BP_DIR/index.js" $MW_LAYER
 
 echo -n "$MW_LAYER/index.js" > "$MW_LAYER/env/MIDDLEWARE_FUNCTION_URI"
-echo "launch = true" >> "$MW_LAYER.toml"
-echo "build = true" >> "$MW_LAYER.toml"
+echo "launch = true" > "$MW_LAYER.toml"
