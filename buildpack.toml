@@ -1,0 +1,9 @@
+api = "0.1"
+
+[buildpack]
+id = "heroku/node-fn-structured-cloudevent"
+name = "Node Function Structured Cloudevent Middleware"
+version = "0.0.1"
+
+[[stacks]]
+id = "heroku-18"

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+BP_DIR=$(cd $(dirname $0)/..; pwd)
+LAYERS_DIR="$1"
+MW_LAYER="$LAYERS_DIR/middleware"
+
+mkdir -p "$MW_LAYER/env"
+
+cp "$BP_DIR/index.js" $MW_LAYER
+
+echo -n "$MW_LAYER/index.js" > "$MW_LAYER/env/MIDDLEWARE_FUNCTION_URI"
+echo "launch = true" > "$MW_LAYER.toml"
